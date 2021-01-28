@@ -1,0 +1,126 @@
+/* LAYOUTS */
+.display-flex{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-space-evenly{
+    display: flex;
+
+    justify-content: space-evenly;
+}
+
+.flex-space-between{
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.flex-stretch{
+    display: flex;
+
+    justify-content: stretch;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.display-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 50px;
+    grid-template-areas:
+    'grid-item-1 grid-item-2 grid-item-3'
+    'grid-item-4 . grid-item-5'
+    'grid-item-6 grid-item-6 grid-item-6';
+    justify-content: space-evenly;
+}
+
+/* ELEMENTS */
+.grid-item-1{
+grid-area: grid-item-1;
+}
+
+.grid-item-2{
+    grid-area: grid-item-2;
+}
+    
+.grid-item-3{
+        grid-area: grid-item-3;
+}
+        
+.grid-item-4{
+            grid-area: grid-item-4;
+}
+            
+.grid-item-5{
+                grid-area: grid-item-5;
+}
+                
+.grid-item-6{
+                    grid-area: grid-item-6;
+                    justify-self: end;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+}
+
+.width-70-percent {
+    width: calc(100% - 200px);
+}
+
+.width-auto {
+       width: auto;
+}
+
+.width-minus200px {
+    width: calc(100% - 200px);
+    /* width: 100%; */
+}
+
+/* COLORS */
+.red{
+    background-color: red;
+}
+
+.cyan{
+    background-color: cyan;
+}
+
+.black{
+    background-color: black;
+}
+
+.magenta{
+    background-color: magenta;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
+
